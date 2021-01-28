@@ -20,3 +20,5 @@ for i in np.arange(0, 1.5, 0.001):
             if 0 <= round(x1.x[0], 3) <= 1.5:
                 if [round(x1.x[0], 3), round(x1.x[1], 3)] not in result:
                     result.append([round(x1.x[0], 3), round(x1.x[1], 3)])
+
+print(result)

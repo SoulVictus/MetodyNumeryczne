@@ -12,8 +12,15 @@ print(f"y'(2.1) = {poly_deriv(2.1)}")
 x_list = np.linspace(1, 3, 100)
 plt.plot(x_list, poly(x_list))
 
+z = np.polyfit(x, y, 7)
+p = np.poly1d(z)
+pp = p.deriv()
+ppp = pp.deriv()
+
 x_roots = poly.roots()
 y_roots = np.zeros(len(x_roots))
+
+print(x_roots)
 
 plt.plot(x_roots, y_roots, "or")
 plt.grid()
